@@ -5,3 +5,4 @@ grape,Grape,true,,Grape
 subregion,Location,true,,
 region,,true,,
 country,,true,,
+price,Price,,,Price
