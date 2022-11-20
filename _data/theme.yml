@@ -30,7 +30,7 @@ subjects-stopwords: # boxers;boxing;boxer # set of subjects separated by ;, e.g.
 ##########
 # LOCATIONS PAGE
 #
-locations-fields: location # set the field to be featured in the cloud
+locations-fields: subregion;region;country # set the field to be featured in the cloud
 locations-min: 1 # min size for subject cloud, too many terms = slow load time!
 locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
@@ -38,9 +38,9 @@ locations-stopwords: # set of subjects separated by ; that will be removed from 
 # MAP PAGE
 #
 # see _data/map-config.csv for field display options
-latitude: 46.727485 #to determine center of map
-longitude: -117.014185 #to determine center of map
-zoom-level: 7 # zoom level for map 
+latitude: 45.4156594 #to determine center of map
+longitude: -52.5063212 #to determine center of map
+zoom-level: 2 # zoom level for map 
 map-base: Esri_WorldStreetMap # set default base map, choose from: Esri_WorldStreetMap, Esri_NatGeoWorldMap, Esri_WorldImagery
 map-search: true # true/false, not suggested with large collections
 map-search-fuzziness: 0.35 # fuzzy search range from 1 = anything to 0 = exact match only
@@ -58,9 +58,9 @@ year-nav-increment: 5 # set increments when auto gen nav years
 #
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,creator,date,description,subject,location,latitude,longitude,source,identifier,type,format,language,rights,rightsstatement"
+metadata-export-fields: "title,winery,grape,vintage,isblend,height,min-diam,max-diam,weight,rating-spectator,rating-advocate,rating-cellar,objectid,price,color,basecolor,latitude,longitude,location,filename,type,format,subregion,region,country"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject,creator,format"
+metadata-facets-fields: "grape,winery,price"
 
 ##########
 # ADVANCED OPTIONS
