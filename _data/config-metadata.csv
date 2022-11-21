@@ -8,6 +8,7 @@ height,Height,
 min-diam,Minimum Diameter,
 max-diam,Maximum Diameter,
 weight,Weight,
+rating-avg,Average Rating
 rating-spectator,Wine Spectator Rating,
 rating-advocate,Wine Advocate Rating,
 rating-cellar,Cellar Tracker Rating,
