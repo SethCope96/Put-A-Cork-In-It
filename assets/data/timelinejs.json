@@ -4,7 +4,8 @@
 # Curate the timeline by adding a "where" expression to the assign on the first line.
 # For details, see https://collectionbuilder.github.io/cb-docs/docs/advanced/timelinejs/  
 ---
-{%- assign items = site.data[site.metadata] | where_exp: 'item', 'item.date' -%}
+{%- assign items = site.data[site.metadata] | where_exp: 'item', 'item.vintage' -%}
+{%- assign items = site.data[site.metadata] | where_exp: 'item','item.format contains "image"' -%}
 {
     "title": {
         "media": {
@@ -18,18 +19,18 @@
         }
     },
     "events": [
-      {% for item in items %}{% if item.date %}{
+      {% for item in items %}{% if item.vintage %}{
         "media": {
           "url": "{% if item.youtubeid %}{{ 'https://www.youtube.com/watch?v=' | append: item.youtubeid }}{% elsif item.vimeoid %}{{ 'https://vimeo.com/' | append: item.vimeoid }}{% elsif item.filename contains 'http' %}{{ item.filename }}{% else %}{{ item.filename | prepend: '/objects/' | absolute_url }}{% endif %}",
           "caption": {{ item.title | jsonify }},
           "link": "{{ '/item.html' | absolute_url | append: '?id=' | append: item.objectid }}",
           "credit": "{{ site.title }}"
         },
-        "start_date": { {% if item.date contains '-' %}{% assign dates = item.date | split: '-' %}
+        "start_date": { {% if item.vintage contains '-' %}{% assign dates = item.vintage | split: '-' %}
           "month": "{{ dates[1] }}",
           "day": "{{ dates[2] }}",
-          "year": "{{ dates[0] }}"{% elsif item.date contains '/' %}"year": "{{ item.date | strip | split: '/' | last }}"{% else %}
-          "year": "{{ item.date }}"{% endif %}
+          "year": "{{ dates[0] }}"{% elsif item.vintage contains '/' %}"year": "{{ item.vintage | strip | split: '/' | last }}"{% else %}
+          "year": "{{ item.vintage }}"{% endif %}
         },
         "text": {
           "headline": {{ item.title | jsonify }}{% if item.description %},
