@@ -1,5 +1,9 @@
 field,display_name
 title,Title
-date,Date
-description,Description
-subject,Subjects
+vintage,Vintage
+grape,Grape
+winery,Winery
+price,Price
+subregion,Subregion
+region,Region
+country,Country
