@@ -30,5 +30,6 @@ In starting this project, I had large goals. I wanted to make a 3d model of each
 ### Initial Metadata Application Profile
 {% include feature/pdf.html objectid="metadataappprof" width="50" %}
 
-## __Takeaways__
-Although my product fell short of my goals, these are all things that can still be done with this project. In going through this experience while I was frustrated in the moment with my own limitations, I am filled with excitement at the ideas I have moving forward in filling out the collection and keeping it current with new wines.
+Looking at the collection that I ended up with, I am nevertheless satisfied. Although I was unable to implement each facet of my goals, I am filled with excitement at the ideas I have moving forward in filling out the collection and keeping it current with new wines. The collection itself contains 29 wine corks at various (affordable) price points, all including the ratings of at least one of three acclaimed wine review sites. Feel free to [explore](https://sethcope96.github.io/Put-A-Cork-In-It/browse.html) the collection visually, or search through the [map](https://sethcope96.github.io/Put-A-Cork-In-It/map.html) to find your favorite region! Although the initial upload shows that there are a lot of Californian and Italian wines in my collection, I hope to continue updating the collection in the future. I hear New Zealand makes a mean Chardonnay?
+
+**_-Seth Cope_**
