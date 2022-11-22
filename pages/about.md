@@ -10,9 +10,8 @@ credits: true
 
 {% include feature/jumbotron.html objectid="https://cliffsliving.com/wp-content/uploads/2020/11/CLF-best-wineries-in-the-blue-ridge-mountains-e1604064532349.jpg" %}
 
-{% include feature/nav-menu.html sections="About the Collection;About the About Page" %}
+{% include feature/nav-menu.html sections="Goals;Initial MAP" %}
 
-# About the Collection
 ## __Goals__
 Materials left behind hold a special significance to me. From a young age, I was attracted to the cast off scrap iron, the rusted old radio. I guess that's followed me into my 20s, as when I began this project I found myself staring at a wall lined with wine corks (in order of largest to smallest). 
 
